@@ -3469,27 +3469,27 @@
     /* ===================================
      Cookies set
      ====================================== */
-    if (typeof $.cookie === 'function') {
-        if ($('body').find('#cookies-model').length > 0) {
-            setTimeout(function () {
-                var cookieModel = $('#cookies-model'),
-                        cookieConsentclosed = $.cookie('cookieConsent');
+    // if (typeof $.cookie === 'function') {
+    //     if ($('body').find('#cookies-model').length > 0) {
+    //         setTimeout(function () {
+    //             var cookieModel = $('#cookies-model'),
+    //                     cookieConsentclosed = $.cookie('cookieConsent');
 
-                if (cookieConsentclosed == 'closed') {
-                    cookieModel.remove();
-                } else {
-                    cookieModel.show();
-                }
+    //             if (cookieConsentclosed == 'closed') {
+    //                 cookieModel.remove();
+    //             } else {
+    //                 cookieModel.show();
+    //             }
 
-                cookieModel.find('[data-accept-btn]').on('click', function (e) {
-                    e.preventDefault();
-                    var expiresDays = 1;
-                    cookieModel.remove();
-                    $.cookie('cookieConsent', 'closed', {expires: expiresDays, path: '/'});
-                });
-            }, 1000);
-        }
-    }
+    //             cookieModel.find('[data-accept-btn]').on('click', function (e) {
+    //                 e.preventDefault();
+    //                 var expiresDays = 1;
+    //                 cookieModel.remove();
+    //                 $.cookie('cookieConsent', 'closed', {expires: expiresDays, path: '/'});
+    //             });
+    //         }, 1000);
+    //     }
+    // }
 
     /* ===================================
      Back to top scroll
@@ -3771,3 +3771,21 @@ function initMap() {
         }
     });
 }
+
+
+
+
+document.getElementById('shareButton').addEventListener('click', async () => {
+    if (navigator.share) {
+        try {
+            await navigator.share({
+                url: window.location.href
+            });
+            console.log('Content shared successfully');
+        } catch (error) {
+            console.error('Error sharing:', error);
+        }
+    } else {
+        alert('Share API not supported on this browser.');
+    }
+});
