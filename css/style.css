@@ -6892,8 +6892,8 @@ header.sticky.sticky-active [data-header-hover=dark] {
   background-color: var(--dark-gray) !important;
 }
 header.sticky.sticky-active [data-header-hover=dark] .navbar-nav .nav-item:hover .nav-link {
-  color: var(--white);
-  opacity: 0.6;
+  color: black;
+  font-size: 22px;
 }
 header.sticky.sticky-active [data-header-hover=dark] .navbar-nav .nav-link {
   color: var(--white);
@@ -7123,10 +7123,14 @@ header.sticky .navbar.disable-fixed {
   display: none;
 }
 .navbar .navbar-nav .nav-item:hover .nav-link, .navbar .navbar-nav .nav-item.active .nav-link {
-  opacity: 0.6;
+  text-decoration: underline;
+  text-decoration-color: #fee300;
+  text-decoration-thickness: 2px
 }
 .navbar .navbar-nav .nav-item .nav-link.active {
-  opacity: 0.6;
+  text-decoration: underline;
+  text-decoration-color: #fee300;
+  text-decoration-thickness: 2px
 }
 .navbar .navbar-nav .nav-link {
   font-size: 16px;
