@@ -162,6 +162,13 @@ footer .elements-social.social-icon-style-02 li {
 .tab-style-07 .nav-tabs .nav-item .nav-link {
   padding: 20px 30px;
 }
+
+.nav-item .nav-link img{
+  height: 24px;
+  width: 24px;
+  color: black;
+}
+
 .tab-style-07 .nav-tabs .nav-item .nav-link.active span,
 .tab-style-07 .nav-tabs .nav-item .nav-link:hover span {
   font-size: 22px;
@@ -313,4 +320,22 @@ footer .elements-social.social-icon-style-02 li {
 .nav-link:hover{
   color: black;
   font-size: 22px;
+}
+
+.pd:hover{
+  border: 2px solid black;
+}
+.combo{
+  border-radius: 10px;
+  border: 2px solid #D3D3D3;
+}
+
+.combo:hover{
+  border: 2px solid black;
+}
+
+.below-banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
