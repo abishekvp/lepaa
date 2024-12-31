@@ -31,6 +31,26 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="demos/fashion-store/fashion-store.css" />
     <link rel="stylesheet" href="demos/gym-and-fitness/gym-and-fitness.css" />
+    <style>
+      .justi{
+        justify-content: center;
+      }
+      @media (max-width: 768px) {
+        .responsive-bg {
+          background-image: url('./assets/cover_lepa2.png') !important;
+        }
+        .justi{
+          justify-content: start;
+          margin-top: 25px;
+          text-align: center;
+          align-items: center;
+        }
+        .col{
+          margin-left: 60px;
+        }
+      }
+    </style>
+    
   </head>
   <body data-mobile-nav-style="classic">
     <!-- start header -->
@@ -326,7 +346,7 @@
           <!-- start slider item -->
           <div class="swiper-slide overflow-hidden">
             <div
-              class="cover-background position-absolute top-0 start-0 w-100 h-100"
+              class="cover-background position-absolute top-0 start-0 w-100 h-100 responsive-bg"
               data-swiper-parallax="500"
               style="
                 background-image: url('./assets/cover_lepa.png');
@@ -336,11 +356,11 @@
               <div class="container h-100">
                 <div class="row align-items-center h-100 justify-content-start">
                   <div
-                    class="col-md-10 position-relative text-white d-flex flex-column justify-content-center h-100"
+                    class="col-md-10 position-relative text-white d-flex flex-column justi h-100"
                   >
                     <div
                       data-anime='{ "opacity": [0, 1], "translateY": [50, 0], "easing": "easeOutQuad", "duration": 500, "delay": 300 }'
-                      class="alt-font text-dark-gray mb-25px fs-30 sm-mb-15px"
+                      class="alt-font text-dark-gray mb-25px fs-30 sm-mb-20px"
                     >
                       <span class="text-highlight"
                         >Natural Haircare Solutions !<span
@@ -349,7 +369,7 @@
                       ></span>
                     </div>
                     <div
-                      class="alt-font fs-120 xs-fs-95 lh-115 mb-40px text-dark-gray fw-600 transform-origin-right ls-minus-2px sm-mb-25px"
+                      class="alt-font fs-120 xs-fs-95 lh-115 mb-40px text-dark-gray fw-600 transform-origin-right ls-minus-2px sm-mb-10px"
                       data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "staggervalue": 150, "easing": "easeOutQuad" }'
                     >
                       <span class="d-block xs-fs-75">Lepaa Herbal</span>
@@ -399,12 +419,13 @@
           data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'
         >
           <!-- start features box item -->
-          <div class="col icon-with-text-style-01 md-mb-35px">
+          <div class="col icon-with-text-style-01 md-mb-35px"
+        >
             <div
               class="feature-box feature-box-left-icon-middle last-paragraph-no-margin"
             >
-              <div class="feature-box-icon me-20px">
-                <i class="line-icon-Box-Close icon-large text-dark-gray"></i>
+              <div class="feature-box-icon me-20px" style="font-size: 40px; color: black;">
+                <i class="fa-solid fa-leaf" ></i>
               </div>
               <div class="feature-box-content">
                 <span class="alt-font fs-20 fw-500 d-block text-dark-gray"
@@ -416,7 +437,8 @@
           </div>
           <!-- end features box item -->
           <!-- start features box item -->
-          <div class="col icon-with-text-style-01 md-mb-35px">
+          <div class="col icon-with-text-style-01 md-mb-35px"
+         >
             <div
               class="feature-box feature-box-left-icon-middle last-paragraph-no-margin"
             >
@@ -433,8 +455,8 @@
           </div>
           <!-- end features box item -->
           <!-- start features box item -->
-          <div class="col icon-with-text-style-01 xs-mb-35px">
-            <div
+          <div class="col icon-with-text-style-01 xs-mb-35px"
+        >            <div
               class="feature-box feature-box-left-icon-middle last-paragraph-no-margin"
             >
               <div class="feature-box-icon me-20px">
@@ -450,7 +472,8 @@
           </div>
           <!-- end features box item -->
           <!-- start features box item -->
-          <div class="col icon-with-text-style-01">
+          <div class="col icon-with-text-style-01"
+          >
             <div
               class="feature-box feature-box-left-icon-middle last-paragraph-no-margin"
             >
@@ -1222,7 +1245,7 @@
           <div
             class="col-lg-3 col-md-12 col-sm-6 last-paragraph-no-margin text-center text-sm-start text-md-center text-lg-start md-mb-30px"
           >
-            <a href="demo-beauty-salon.html" class="footer-logo d-inline-block"
+            <a href="index.html" class="footer-logo d-inline-block"
               ><img
                 src="./assets/logo_white.png"
                 style="width: 75px; height: 600px"
