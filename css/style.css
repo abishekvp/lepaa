@@ -7960,7 +7960,7 @@ header.sticky .navbar.disable-fixed {
   color: var(--white);
 }
 header a.widget-text:hover {
-  opacity: 0.6;
+  
 }
 /* Header push button */
 .header-push-button {
