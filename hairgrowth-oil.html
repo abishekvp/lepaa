@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <meta name="description" content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 52+ ready demos.">
         <!-- favicon icon -->
-        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="shortcut icon" href="./assets/logo.svg">
         <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/responsive.css"/>
         <link rel="stylesheet" href="demos/fashion-store/fashion-store.css" />
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     </head>
     <body data-mobile-nav-style="classic">
 
@@ -281,7 +282,7 @@
                     </div>
                     <div class="col-12 col-lg-5 product-info">
                         <span class="fw-500 text-dark-gray d-block"> Lepaa's</span>
-                        <h4 class="alt-font text-dark-gray fw-500 mb-5px">Hairgrowth Oil</h5>
+                        <h4 class="alt-font text-dark-gray fw-500 mb-5px" id="product-name">Hairgrowth Oil</h5>
                             <!-- <div class="d-block d-sm-flex align-items-center mb-15px">
                                 <div class="me-10px xs-me-0">
                                     <a href="#tab" class="section-link ls-minus-1px icon-small">
@@ -296,7 +297,7 @@
                                 <div><span class="text-dark-gray fw-500">SKU: </span>M492300</div>
                             </div> -->
                             <div class="product-price mb-10px">
-                                <span class="text-dark-gray fs-28 xs-fs-24 fw-700 ls-minus-1px"><del class="text-medium-gray me-10px fw-400">₹499.00</del>₹399.00</span>
+                                <span class="text-dark-gray fs-28 xs-fs-24 fw-700 ls-minus-1px"><del class="text-medium-gray me-10px fw-400">₹499.00</del><span id="product-amount">₹399.00</span></span>
                             </div>
                             <p>A nourishing blend of natural oils designed to promote healthy hair growth, reduce breakage, and enhance shine.</p>
                             <!-- <div class="d-flex align-items-center mb-20px">
@@ -338,15 +339,15 @@
                                 </ul>
                             </div> -->
                             <div class="d-flex align-items-center flex-column flex-sm-row mb-20px position-relative">
-                                <div class="quantity me-15px xs-mb-15px order-1">
+                                <!-- <div class="quantity me-15px xs-mb-15px order-1">
                                     <button type="button" class="qty-minus">-</button>
-                                    <input class="qty-text" type="text" id="hairgrowth-oil-product-count" value="1" aria-label="submit" />
+                                    <input class="qty-text" type="text" id="product-count" value="1" aria-label="submit" />
                                     <button type="button" class="qty-plus">+</button>
-                                </div>
-                                <a href="#" class="btn btn-cart btn-extra-large btn-switch-text btn-box-shadow btn-none-transform btn-dark-gray left-icon btn-round-edge border-0 me-15px xs-me-0 order-3 order-sm-2">
+                                </div> -->
+                                <a href="https://rzp.io/rzp/bOLAzngj" class="btn btn-cart btn-extra-large btn-switch-text btn-box-shadow btn-none-transform btn-dark-gray left-icon btn-round-edge border-0 me-15px xs-me-0 order-3 order-sm-2">
                                     <span>
                                         <span><i class="feather icon-feather-shopping-bag"></i></span>
-                                        <span class="btn-double-text ls-0px" id="buy-button" onclick="make_payment('Harigrowth Oil', '399', )" data-text="Buy">Buy</span> 
+                                        <span class="btn-double-text ls-0px" id="buy-button" data-text="Buy">Buy</span> 
                                     </span>
                                 </a>
                                <!-- <a href="#" class="wishlist d-flex align-items-center justify-content-center border border-radius-5px border-color-extra-medium-gray order-2 order-sm-3">
@@ -413,10 +414,10 @@
                                 <div>
                                     <a href="#"><img src="images/visa.svg" class="h-30px me-5px mb-5px" alt=""></a>
                                     <a href="#"><img src="images/mastercard.svg" class="h-30px me-5px mb-5px" alt=""></a>
-                                    <a href="#"><img src="images/american-express.svg" class="h-30px me-5px mb-5px" alt=""></a>
-                                    <a href="#"><img src="images/discover.svg" class="h-30px me-5px mb-5px" alt=""></a>
-                                    <a href="#"><img src="images/diners-club.svg" class="h-30px me-5px mb-5px" alt=""></a>
-                                    <a href="#"><img src="images/union-pay.svg" class="h-30px" alt=""></a>  
+                                    <!-- <a href="#"><img src="images/american-express.svg" class="h-30px me-5px mb-5px" alt=""></a> -->
+                                    <!-- <a href="#"><img src="images/discover.svg" class="h-30px me-5px mb-5px" alt=""></a> -->
+                                    <!-- <a href="#"><img src="images/diners-club.svg" class="h-30px me-5px mb-5px" alt=""></a> -->
+                                    <!-- <a href="#"><img src="images/union-pay.svg" class="h-30px" alt=""></a>   -->
                                 </div>
                             </div>
                             <div>
@@ -1074,5 +1075,6 @@
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/vendors.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/payment.js"></script>
     </body>
 </html>
